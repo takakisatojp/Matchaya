@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #e6e2d7;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.4rem;
+}
+img {
+  max-width: 100%;
+  /* vertical-align: bottom; */
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.site-title {
+  /* line-height: 1px; */
+  margin-left: 60px;
+}
+.site-title a {
+  display: block;
+}
+.site-title img {
+  width: 40px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+
+/* #header */
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/mainvisual-pc.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 60px 80px;
+  margin-bottom: 180px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;  /* Chrome、Safari用 */
+  -moz-writing-mode: vertical-rl;     /* Firefox用 */
+  -ms-writing-mode: tb-rl;            /* IE用 */
+}
+
+#header nav ul {
+  font-size: 1.5rem;
+}
+#header nav ul li {
+  margin-left: 25px;
+}
+
+#header .onlinestore {
+  background: rgba(255,255,255,0.2);
+  padding: 8px;
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+}
+#header .onlinestore a {
+  display: block;
+  border: solid 1px #ccc;
+  padding: 30px 18px;
+}
+#header .onlinestore a:hover {
+  opacity: 0.7;
+}
+
+/* #news */
+#news {
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#news .section-title {
+  font-weight: normal;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+}
+#news .section-title .en {
+  display: block;
+  font-size: 1.25rem;
+  margin-left: 15px;
+}
+#news .section-title .ja {
+  display: block;
+  font-size: 3.6rem;
+  letter-spacing: 0.1em;
+}
+#news .list {
+  padding: 80px 100px 0 0;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+}
+
+#news .list dt {
+  border-right: solid 1px #000;
+  font-size: 1.2rem;
+  padding: 15px 30px 15px 5px;
+}
+#news .list dd {
+  padding: 15px 0 15px 30px;
+}
+/*
+最後だけ左側に罫線を引く
+*/
+#news .list dd:last-child {
+  border-left: solid 1px #000;
+}
+
+/* #products共通 */
+.products {
+  display: flex;
+  margin-bottom: 180px;
+}
+.products .section-title {
+  font-weight: normal;
+  line-height: 1;
+}
+.products .section-title .ja {
+  font-size: 3.2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+.products .section-title .en {
+  font-size: 1.25rem;
+}
+.products .img {
+  width: 65%;
+  margin-top: 100px;
+  position: relative;
+}
+.products .text {
+  width: 56%;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+}
+/* #products1 */
+#products1 {
+  flex-direction: row-reverse;
+}
+#products1 .section-title {
+  margin-left: 20px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+}
+#products1 .text {
+  background: rgba(249, 233, 6, 0.6);
+  left: -20px;
+}
+/* #product2 */
+#products2 .section-title {
+  margin-right: 20px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+}
+#products2 .text {
+  background: rgba(249, 233, 6, 0.6);
+  right: -20px;
+}
+/* #shop */
+#shop iframe {
+  width: 100%;
+}
+/* #footer */
+#footer {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 80px 30px 30px;
+}
+#footer .inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+#footer .inner .left,
+#footer .inner .right {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+}
+#footer .inner .logo {
+  width: 40px;
+  margin-left: 60px;
+}
+#footer .inner .info {
+  line-height: 2;
+}
+#footer .menu {
+  font-size: 1.6rem;
+  margin-right: 60px;
+}
+#footer .menu li {
+  margin-left: 25px;
+}
+#footer .copyright {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+  }
+  /* #header */
+  #header {
+    background-image: url(../image/mainvisual-sp.png);
+    padding: 20px;
+    margin-bottom: 80px;
+    
+  }
+   #header .onlinestore {
+    left: 20px;
+    bottom: 20px;
+  }
+
+
+
+
+
+
+}
+
+
